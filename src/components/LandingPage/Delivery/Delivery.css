@@ -6,6 +6,8 @@
     flex-wrap: wrap;
     gap: 80px;
     align-self: stretch;
+    width: 100%;
+    padding: 72px 32px 0;
   }
   .delivery .DeliveryComp {
     display: flex;

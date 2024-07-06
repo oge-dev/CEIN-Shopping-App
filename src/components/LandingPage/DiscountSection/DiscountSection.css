@@ -1,7 +1,6 @@
 .DiscountSection {
   width: 100%;
-  padding: 72px 32px 0;
-  /* gap: 72px; */
+  padding: 72px 32px;
 }
 .DiscountSection .discount {
   display: flex;

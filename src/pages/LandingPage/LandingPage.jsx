@@ -3,8 +3,8 @@ import "./LandingPage.css";
 import HeroSection from "../../components/LandingPage/HeroSection/HeroSection";
 import Delivery from "../../components/LandingPage/Delivery/Delivery";
 import DiscountSection from "../../components/LandingPage/DiscountSection/DiscountSection";
-import Collections from "../../components/LandingPage/CollectionSections/Collections";
 import Testimonials from "../../components/LandingPage/Testimonial/Testimonial";
+import ProductList from "../../components/ShopPage/Products/ProductList";
 
 const LandingPage = () => {
   return (
@@ -13,7 +13,7 @@ const LandingPage = () => {
       <div className="Delivery-Collections-Testimonials">
         <Delivery />
         <DiscountSection />
-        <Collections />
+        <ProductList />
         <Testimonials />
       </div>
     </div>

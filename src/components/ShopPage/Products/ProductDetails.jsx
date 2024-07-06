@@ -3,6 +3,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useCart } from '../CartContext/CartContext';
 import ProductsData from '../../../data/Products';
+import { Link } from 'react-router-dom';
 
 const ProductDetails = () => {
   const { productId } = useParams(); // Get the productId parameter from URL
@@ -29,6 +30,10 @@ const ProductDetails = () => {
       ) : (
         <button onClick={() => addToCart(product)}>Add to Cart</button>
       )}
+      <div>
+      <Link to={'/cart'}>Go to Cart</Link>
+      </div>
+      
     </div>
   );
 }
