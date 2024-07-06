@@ -1,13 +1,7 @@
 .DiscountSection {
-  /* display: flex; */
-  height: 3565px;
   width: 100%;
-  padding: 72px 32px;
-  /* flex-direction: column; */
-  /* align-items: flex-start; */
+  padding: 72px 32px 0;
   /* gap: 72px; */
-  /* flex-shrink: 0; */
-  /* align-self: stretch; */
 }
 .DiscountSection .discount {
   display: flex;
@@ -26,10 +20,10 @@
   padding: 30px 49px;
 }
 .discount .girl {
-  background: linear-gradient(135deg, #456ed6 0%, #32ccbc 100%);
+  background: linear-gradient(135deg, var(--sky-blue) 0%, #32ccbc 100%);
 }
 .discount .boy {
-  background: linear-gradient(135deg, #879dd6 0%, #456ed6 100%);
+  background: linear-gradient(135deg, #879dd6 0%, var(--sky-blue) 100%);
 }
 .discount .girl .discount-text,
 .discount .boy .discount-text {
@@ -39,20 +33,21 @@
 .discount .boy .discount-text h2 {
   color: var(--White, #fff);
   font-size: 45px;
-  font-style: normal;
-  font-weight: 700;
+  
   line-height: normal;
   margin-bottom: 19px;
 }
 .discount .girl .discount-text p,
 .discount .boy .discount-text p {
   color: var(--White, #fff);
-  font-family: Ubuntu;
   font-size: 25px;
-  font-style: normal;
-  font-weight: 500;
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-500);
   line-height: normal;
   margin-bottom: 32px;
+}
+.discount .boy .discount-text p span, .discount .girl .discount-text p span{
+  color:  #FBD103;
 }
 .discount .girl .discount-img img {
   max-width: 335px;
