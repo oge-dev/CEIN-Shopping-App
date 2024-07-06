@@ -1,0 +1,34 @@
+
+.delivery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    align-self: stretch;
+  }
+  .delivery .DeliveryComp {
+    display: flex;
+    padding: 3px 57.505px 3px 0px;
+    align-items: center;
+    gap: 15px;
+  }
+  .delivery img {
+    width: 60px;
+    height: 60px;
+  }
+  .delivery h2 {
+    color: var(--Black, #000);
+    font-size: 24px;
+    font-style: var();
+    font-weight: var(--font-weight-700);
+    line-height: normal;
+  }
+  .delivery p {
+    color: var(--Black, #000);
+    font-size: 18px;
+    font-style: var(--font-style-normal);
+    font-weight: var(--font-weight-400);
+    line-height: normal;
+  }
+  

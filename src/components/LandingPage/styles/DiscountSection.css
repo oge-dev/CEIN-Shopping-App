@@ -1,0 +1,92 @@
+.DiscountSection {
+  /* display: flex; */
+  height: 3565px;
+  width: 100%;
+  padding: 72px 32px;
+  /* flex-direction: column; */
+  /* align-items: flex-start; */
+  /* gap: 72px; */
+  /* flex-shrink: 0; */
+  /* align-self: stretch; */
+}
+.DiscountSection .discount {
+  display: flex;
+  flex-direction: row;
+  gap: 29px;
+}
+.discount .girl,
+.discount .boy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  height: 300px;
+  flex-shrink: 0;
+  max-width: 636px;
+  padding: 30px 49px;
+}
+.discount .girl {
+  background: linear-gradient(135deg, #456ed6 0%, #32ccbc 100%);
+}
+.discount .boy {
+  background: linear-gradient(135deg, #879dd6 0%, #456ed6 100%);
+}
+.discount .girl .discount-text,
+.discount .boy .discount-text {
+  max-width: 227px;
+}
+.discount .girl .discount-text h2,
+.discount .boy .discount-text h2 {
+  color: var(--White, #fff);
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 19px;
+}
+.discount .girl .discount-text p,
+.discount .boy .discount-text p {
+  color: var(--White, #fff);
+  font-family: Ubuntu;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 32px;
+}
+.discount .girl .discount-img img {
+  max-width: 335px;
+  height: 300px;
+  flex-shrink: 0;
+}
+.discount .boy .discount-img img {
+  max-width: 350px;
+  height: 351px;
+  flex-shrink: 0;
+}
+
+.discount button {
+  display: flex;
+  width: 170.719px;
+  height: 52px;
+  padding: 15px 38px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 1000px;
+  background: var(--White, #fff);
+  border: none;
+}
+.discount button a {
+  color: var(--Dark-Grey---Fashion, #323232);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+.discount button a:hover,
+.discount button a:active {
+  text-decoration: underline;
+}
