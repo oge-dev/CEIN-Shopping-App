@@ -11,7 +11,7 @@ import ProductList from "./components/ShopPage/Products/ProductList.jsx";
 import { CartProvider } from "./components/ShopPage/CartContext/CartContext.jsx";
 import CartPage from "./pages/CartPage/CartPage.jsx";
 import CategoryProductsPage from "./pages/CategoryProductsPage/CategoryProductsPage.jsx";
-
+import Testimonial from "./components/LandingPage/Testimonial/Testimonial.jsx";
 
 const App = () => {
   return (
@@ -62,6 +62,7 @@ const App = () => {
               </CartProvider>
             }
           />
+           <Route path="/testimonial" element={<Testimonial />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
       </main>

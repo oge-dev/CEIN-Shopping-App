@@ -10,12 +10,10 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <HeroSection />
-      <div className="Delivery-Collections-Testimonials">
         <Delivery />
         <DiscountSection />
         <ProductList />
         <Testimonials />
-      </div>
     </div>
   );
 };
