@@ -15,7 +15,7 @@ const DiscountSection = () => {
             <p>
               Up To <span>40%</span> Off
             </p>
-            <Button to={"/shop"} linkText={"Shop Now"} />
+            <Button to={"/products"} linkText={"Shop Now"} />
           </div>
           <div className="discount-img">
             <ImgComp src={GirlImg} alt={"Girls"} />
@@ -27,7 +27,7 @@ const DiscountSection = () => {
             <p>
               Up To <span>40%</span> Off
             </p>
-            <Button to={"/shop"} linkText={"Shop Now"} />
+            <Button to={"/products"} linkText={"Shop Now"} />
           </div>
           <div className="discount-img">
             <ImgComp src={BoyImg} alt={"Boys"} />

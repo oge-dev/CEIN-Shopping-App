@@ -41,6 +41,20 @@ const ProductsData = [
         price: 49.99,
         image: MenRolexWatch,
       },
+      {
+        id: 5,
+        name: "Rolex C156",
+        description: "This is the description for product 2.",
+        price: 49.99,
+        image: MenRolexWatch,
+      },
+      {
+        id: 6,
+        name: "Rolex C156",
+        description: "This is the description for product 2.",
+        price: 49.99,
+        image: MenRolexWatch,
+      },
     ],
   },
   {

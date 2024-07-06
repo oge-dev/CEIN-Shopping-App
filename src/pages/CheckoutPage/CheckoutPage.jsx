@@ -1,11 +1,47 @@
+// CheckoutPage.js
 import React from 'react';
-import './CheckoutPage.css';
+import { Link } from 'react-router-dom';
+import { useCart } from '../../components/ShopPage/CartContext/CartContext';
 
 const CheckoutPage = () => {
+  const { cart } = useCart();
+
+  const getTotalPrice = () => {
+    return cart.reduce((total, product) => total + product.price, 0).toFixed(2);
+  };
+
+  const handleCheckout = () => {
+    // Implement your checkout logic here, such as sending order details to a server
+    console.log("Processing checkout...");
+    // Optionally, clear cart after successful checkout
+    // clearCart();
+  };
+
   return (
-    <div className="checkout-page">
-      <h1>Checkout</h1>
-      <p>This is the checkout page.</p>
+    <div>
+      <h2>Checkout</h2>
+      <div>
+        <h3>Cart Items:</h3>
+        {cart.map(product => (
+          <div key={product.id}>
+            <h4>{product.name}</h4>
+            <p>Price: ${product.price}</p>
+          </div>
+        ))}
+        <p>Total Price: ${getTotalPrice()}</p>
+      </div>
+      <div>
+        {/* Add form fields for shipping information */}
+        <h3>Shipping Information:</h3>
+        <form>
+          {/* Example form fields */}
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <input type="text" placeholder="Address" />
+          <button type="submit" onClick={handleCheckout}>Proceed to Checkout</button>
+        </form>
+      </div>
+      <Link to="/">Back to Products</Link>
     </div>
   );
 };

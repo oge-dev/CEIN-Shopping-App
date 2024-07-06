@@ -12,7 +12,7 @@ const HeroSection = () => {
       <p>Where Fashion Meets Function</p>
       <p>cool / Style / Dress</p>
       {/* button at hero section */}
-      <Button to={"/shop"} linkText={"Shop Now"} />
+      <Button to={"/products"} linkText={"Shop Now"} />
     </div>
   );
 };
