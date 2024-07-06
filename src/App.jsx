@@ -10,6 +10,8 @@ import ProductDetails from "./components/ShopPage/Products/ProductDetails.jsx";
 import ProductList from "./components/ShopPage/Products/ProductList.jsx";
 import { CartProvider } from "./components/ShopPage/CartContext/CartContext.jsx";
 import CartPage from "./pages/CartPage/CartPage.jsx";
+import CategoryProductsPage from "./pages/CategoryProductsPage/CategoryProductsPage.jsx";
+
 
 const App = () => {
   return (
@@ -32,6 +34,14 @@ const App = () => {
             element={
               <CartProvider>
                 <ProductDetails />
+              </CartProvider>
+            }
+          />
+          <Route
+            path="/category/:category"
+            element={
+              <CartProvider>
+                <CategoryProductsPage />
               </CartProvider>
             }
           />

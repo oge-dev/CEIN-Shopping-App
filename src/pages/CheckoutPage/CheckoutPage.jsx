@@ -41,7 +41,7 @@ const CheckoutPage = () => {
           <button type="submit" onClick={handleCheckout}>Proceed to Checkout</button>
         </form>
       </div>
-      <Link to="/">Back to Products</Link>
+      <Link to="/">Back to Home</Link>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-
+// ProductsData.js
 import MenGucciSneakers from "../assets/Men-Gucci-Sneakers.png";
 import MenSuit from "../assets/Men-Suit.png";
 import MenNikeTrackSuit from "../assets/Men-Nike-track-suit.png";
@@ -30,28 +30,14 @@ const ProductsData = [
       {
         id: 3,
         name: "Nike Track Suit",
-        description: "This is the description for product 1.",
+        description: "This is the description for product 3.",
         price: 29.99,
         image: MenNikeTrackSuit,
       },
       {
         id: 4,
         name: "Rolex C156",
-        description: "This is the description for product 2.",
-        price: 49.99,
-        image: MenRolexWatch,
-      },
-      {
-        id: 5,
-        name: "Rolex C156",
-        description: "This is the description for product 2.",
-        price: 49.99,
-        image: MenRolexWatch,
-      },
-      {
-        id: 6,
-        name: "Rolex C156",
-        description: "This is the description for product 2.",
+        description: "This is the description for product 4.",
         price: 49.99,
         image: MenRolexWatch,
       },
@@ -61,14 +47,14 @@ const ProductsData = [
     category: "Women's Collections",
     Products: [
       {
-        id: 1,
+        id: 5,
         name: "Product 1",
         description: "This is the description for product 1.",
         price: 29.99,
         image: "/path/to/image1.jpg",
       },
       {
-        id: 2,
+        id: 6,
         name: "Product 2",
         description: "This is the description for product 2.",
         price: 49.99,
@@ -80,14 +66,14 @@ const ProductsData = [
     category: "Kids Collections",
     Products: [
       {
-        id: 1,
+        id: 7,
         name: "Product 1",
         description: "This is the description for product 1.",
         price: 29.99,
         image: "/path/to/image1.jpg",
       },
       {
-        id: 2,
+        id: 8,
         name: "Product 2",
         description: "This is the description for product 2.",
         price: 49.99,
@@ -96,4 +82,5 @@ const ProductsData = [
     ],
   },
 ];
+
 export default ProductsData;
