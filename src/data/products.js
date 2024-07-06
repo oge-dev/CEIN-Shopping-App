@@ -1,19 +1,20 @@
 const products = [
     {
-        id: 1,
-        name: 'Product 1',
-        description: 'Description for Product 1',
-        price: 10,
-        image: 'path-to-image-1.jpg',
+      id: 1,
+      name: 'Product 1',
+      description: 'This is the description for product 1.',
+      price: 29.99,
+      image: '/path/to/image1.jpg',
     },
     {
-        id: 2,
-        name: 'Product 2',
-        description: 'Description for Product 2',
-        price: 20,
-        image: 'path-to-image-2.jpg',
+      id: 2,
+      name: 'Product 2',
+      description: 'This is the description for product 2.',
+      price: 49.99,
+      image: '/path/to/image2.jpg',
     },
     // Add more products as needed
-];
-
-export default products;
+  ];
+  
+  export default products;
+  
