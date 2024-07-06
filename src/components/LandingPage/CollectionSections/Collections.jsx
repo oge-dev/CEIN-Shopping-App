@@ -3,7 +3,7 @@ import NewArrivals from "./NewArrivals.jsx";
 import MenSection from "./MenSection.jsx";
 import WomenSection from "./WomenSection.jsx";
 import KidsSection from "./KidsSection.jsx";
-import "./Collections.css"
+import "./Collections.css";
 
 const Collections = () => {
   return (

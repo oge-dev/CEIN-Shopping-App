@@ -1,33 +1,32 @@
 import React from "react";
-import CollectionsComp from "../CollectionsComp";
-import MenGucciSneakers from "../../assets/Men-Gucci-Sneakers.png";
-import MenSuit from "../../assets/Men-Suit.png";
-import MenNikeTrackSuit from "../../assets/Men-Nike-track-suit.png";
-import MenRolexWatch from "../../assets/Men-Rolex-wrist-watch.png";
-import Feedback from "../../assets/Feedback.png";
-import MinusOutline from "../../assets/minus-outline.png";
-import AddOutline from "../../assets/add-outline.png";
+import CollectionsComp from "./CollectionsComp";
+import Balletwear from "../../../assets/Rectangle760.png";
+import CottonSoftSocks from "../../../assets/Children-nike-socks.png";
+import NikeTrackSuit from "../../../assets/Children-nike-track-suit.png";
+import PumaViverRunner from "../../../assets/Children-puma-shoes.png";
+import Feedback from "../../../assets/Feedback.png";
+import MinusOutline from "../../../assets/minus-outline.png";
+import AddOutline from "../../../assets/add-outline.png";
 import "./collectionSection.css";
-import ImgComp from "../imgComp.jsx";
-import ArrowDown from "../../assets/Keyboard-arrow-down.png";
+import ImgComp from "../../imgComp";
+import ArrowDown from "../../../assets/Keyboard-arrow-down.png";
 import { Link } from "react-router-dom";
 
-
-const MenSection = () => {
+const KidsSection = () => {
   return (
     <div className="MenCollections-wrapper">
-      <h2>Men's Collection</h2>
+      <h2>Kids Collection</h2>
       <p>Check out most promising product bought by our buyer</p>
       <div className="MenCollections">
         <CollectionsComp
-          Sample={MenGucciSneakers}
-          SampleAlt={"Men-Gucci-Sneakers"}
+          Sample={Balletwear}
+          SampleAlt={"Complete Ballet wear"}
           SampleImg={"SampleImg"}
-          section={"Men"}
+          section={"Kids"}
           rateImg={"rateImg"}
           rate={Feedback}
           rateAlt={"Feedback"}
-          SampleName={"Gucci Resort Sneakers"}
+          SampleName={"Complete Ballet wear"}
           price={"200"}
           oldPrice={"300"}
           MinusIcon={"MinusIcon"}
@@ -39,14 +38,14 @@ const MenSection = () => {
           additionAlt={"add-outline"}
         />
         <CollectionsComp
-          Sample={MenSuit}
-          SampleAlt={"Silk Suit - C345"}
+          Sample={CottonSoftSocks}
+          SampleAlt={"Cotton Soft Socks"}
           SampleImg={"SampleImg"}
-          section={"Men"}
+          section={"Kids"}
           rateImg={"rateImg"}
           rate={Feedback}
           rateAlt={"Feedback"}
-          SampleName={"Silk Suit - C345"}
+          SampleName={"Cotton Soft Socks"}
           price={"250"}
           oldPrice={"300"}
           MinusIcon={"MinusIcon"}
@@ -58,10 +57,10 @@ const MenSection = () => {
           additionAlt={"add-outline"}
         />
         <CollectionsComp
-          Sample={MenNikeTrackSuit}
+          Sample={NikeTrackSuit}
           SampleAlt={"Nike Track Suit"}
           SampleImg={"SampleImg"}
-          section={"Men"}
+          section={"Kids"}
           rateImg={"rateImg"}
           rate={Feedback}
           rateAlt={"Feedback"}
@@ -77,16 +76,16 @@ const MenSection = () => {
           additionAlt={"add-outline"}
         />
         <CollectionsComp
-          Sample={MenRolexWatch}
-          SampleAlt={"Rolex C156"}
+          Sample={PumaViverRunner}
+          SampleAlt={"Puma Viver Runner"}
           SampleImg={"SampleImg"}
-          section={"Men"}
+          section={"Kids"}
           rateImg={"rateImg"}
           rate={Feedback}
           rateAlt={"Feedback"}
-          SampleName={"Rolex C156"}
-          price={"200"}
-          oldPrice={"300"}
+          SampleName={"Puma Viver Runner"}
+          price={"300"}
+          oldPrice={"350"}
           MinusIcon={"MinusIcon"}
           substrCount={MinusOutline}
           substrAlt={"minus-outline"}
@@ -110,7 +109,7 @@ const MenSection = () => {
         </button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MenSection;
+export default KidsSection

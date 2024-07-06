@@ -1,15 +1,15 @@
 import React from "react";
-import CollectionsComp from "../CollectionsComp";
-import WomenHandbag from "../../assets/Women-handbag.png";
-import WomenGown from "../../assets/Women-gown.png";
-import WomenShoes from "../../assets/Women-shoes.png";
-import TrackSuits from "../../assets/Women-track-suits.png";
-import Feedback from "../../assets/Feedback.png";
-import MinusOutline from "../../assets/minus-outline.png";
-import AddOutline from "../../assets/add-outline.png";
+import CollectionsComp from "./CollectionsComp";
+import WomenHandbag from "../../../assets/Women-handbag.png";
+import WomenGown from "../../../assets/Women-gown.png";
+import WomenShoes from "../../../assets/Women-shoes.png";
+import TrackSuits from "../../../assets/Women-track-suits.png";
+import Feedback from "../../../assets/Feedback.png";
+import MinusOutline from "../../../assets/minus-outline.png";
+import AddOutline from "../../../assets/add-outline.png";
 import "./collectionSection.css";
-import ImgComp from "../imgComp.jsx";
-import ArrowDown from "../../assets/Keyboard-arrow-down.png";
+import ImgComp from "../../imgComp.jsx";
+import ArrowDown from "../../../assets/Keyboard-arrow-down.png";
 import { Link } from "react-router-dom";
 
 const WomenSection = () => {

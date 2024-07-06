@@ -1,5 +1,5 @@
 import React from "react";
-import ImgComp from "./imgComp";
+import ImgComp from "../../imgComp";
 
 const CollectionsComp = ({
   Sample,

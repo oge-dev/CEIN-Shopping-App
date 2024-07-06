@@ -1,32 +1,33 @@
 import React from "react";
-import CollectionsComp from "../CollectionsComp";
-import Balletwear from "../../assets/Rectangle760.png";
-import CottonSoftSocks from "../../assets/Children-nike-socks.png";
-import NikeTrackSuit from "../../assets/Children-nike-track-suit.png";
-import PumaViverRunner from "../../assets/Children-puma-shoes.png";
-import Feedback from "../../assets/Feedback.png";
-import MinusOutline from "../../assets/minus-outline.png";
-import AddOutline from "../../assets/add-outline.png";
+import CollectionsComp from "./CollectionsComp";
+import MenGucciSneakers from "../../../assets/Men-Gucci-Sneakers.png";
+import MenSuit from "../../../assets/Men-Suit.png";
+import MenNikeTrackSuit from "../../../assets/Men-Nike-track-suit.png";
+import MenRolexWatch from "../../../assets/Men-Rolex-wrist-watch.png";
+import Feedback from "../../../assets/Feedback.png";
+import MinusOutline from "../../../assets/minus-outline.png";
+import AddOutline from "../../../assets/add-outline.png";
 import "./collectionSection.css";
-import ImgComp from "../imgComp.jsx";
-import ArrowDown from "../../assets/Keyboard-arrow-down.png";
+import ImgComp from "../../imgComp.jsx";
+import ArrowDown from "../../../assets/Keyboard-arrow-down.png";
 import { Link } from "react-router-dom";
 
-const KidsSection = () => {
+
+const MenSection = () => {
   return (
     <div className="MenCollections-wrapper">
-      <h2>Kids Collection</h2>
+      <h2>Men's Collection</h2>
       <p>Check out most promising product bought by our buyer</p>
       <div className="MenCollections">
         <CollectionsComp
-          Sample={Balletwear}
-          SampleAlt={"Complete Ballet wear"}
+          Sample={MenGucciSneakers}
+          SampleAlt={"Men-Gucci-Sneakers"}
           SampleImg={"SampleImg"}
-          section={"Kids"}
+          section={"Men"}
           rateImg={"rateImg"}
           rate={Feedback}
           rateAlt={"Feedback"}
-          SampleName={"Complete Ballet wear"}
+          SampleName={"Gucci Resort Sneakers"}
           price={"200"}
           oldPrice={"300"}
           MinusIcon={"MinusIcon"}
@@ -38,14 +39,14 @@ const KidsSection = () => {
           additionAlt={"add-outline"}
         />
         <CollectionsComp
-          Sample={CottonSoftSocks}
-          SampleAlt={"Cotton Soft Socks"}
+          Sample={MenSuit}
+          SampleAlt={"Silk Suit - C345"}
           SampleImg={"SampleImg"}
-          section={"Kids"}
+          section={"Men"}
           rateImg={"rateImg"}
           rate={Feedback}
           rateAlt={"Feedback"}
-          SampleName={"Cotton Soft Socks"}
+          SampleName={"Silk Suit - C345"}
           price={"250"}
           oldPrice={"300"}
           MinusIcon={"MinusIcon"}
@@ -57,10 +58,10 @@ const KidsSection = () => {
           additionAlt={"add-outline"}
         />
         <CollectionsComp
-          Sample={NikeTrackSuit}
+          Sample={MenNikeTrackSuit}
           SampleAlt={"Nike Track Suit"}
           SampleImg={"SampleImg"}
-          section={"Kids"}
+          section={"Men"}
           rateImg={"rateImg"}
           rate={Feedback}
           rateAlt={"Feedback"}
@@ -76,16 +77,16 @@ const KidsSection = () => {
           additionAlt={"add-outline"}
         />
         <CollectionsComp
-          Sample={PumaViverRunner}
-          SampleAlt={"Puma Viver Runner"}
+          Sample={MenRolexWatch}
+          SampleAlt={"Rolex C156"}
           SampleImg={"SampleImg"}
-          section={"Kids"}
+          section={"Men"}
           rateImg={"rateImg"}
           rate={Feedback}
           rateAlt={"Feedback"}
-          SampleName={"Puma Viver Runner"}
-          price={"300"}
-          oldPrice={"350"}
+          SampleName={"Rolex C156"}
+          price={"200"}
+          oldPrice={"300"}
           MinusIcon={"MinusIcon"}
           substrCount={MinusOutline}
           substrAlt={"minus-outline"}
@@ -109,7 +110,7 @@ const KidsSection = () => {
         </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default KidsSection
+export default MenSection;

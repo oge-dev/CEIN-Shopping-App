@@ -1,9 +1,9 @@
 import React from "react";
-import ImgComp from "../imgComp";
-import GirlImg from "../../assets/discountImage2.png";
-import BoyImg from "../../assets/discountImage.png";
-import "./styles/DiscountSection.css";
-import Button from "../buttonComp";
+import ImgComp from "../../imgComp";
+import GirlImg from "../../../assets/discountImage2.png";
+import BoyImg from "../../../assets/discountImage.png";
+import "./DiscountSection.css";
+import Button from "../../buttonComp";
 
 const DiscountSection = () => {
   return (

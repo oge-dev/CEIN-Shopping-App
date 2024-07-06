@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "../buttonComp";
-import "./styles/HeroSection.css";
+import Button from "../../buttonComp";
+import "./HeroSection.css";
 
 // HeroSection Component
 const HeroSection = () => {
