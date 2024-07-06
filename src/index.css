@@ -1,0 +1,14 @@
+/* custom styling */
+:root{
+    /* colors */
+    --White: #fff;
+    --Black: #000;
+    /* fonts */
+    --font-family-Ubuntu: "Ubuntu", sans-serif;
+    --font-weight-400: 400;
+    --font-weight-400: 500;
+    --font-weight-700: 700;
+    --font-style-normal: normal;
+
+    
+}

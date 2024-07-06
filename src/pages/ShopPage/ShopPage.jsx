@@ -1,7 +1,7 @@
 import React from 'react';
-import ProductList from '../components/ProductList';
-import './styles/ShopPage.css';
-import products from '../data/products';
+import ProductList from '../../components/ProductList';
+import './ShopPage.css';
+import products from '../../data/products';
 
 const ShopPage = () => {
   return (

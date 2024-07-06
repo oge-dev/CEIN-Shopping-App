@@ -1,0 +1,67 @@
+/* styling for hero section */
+.hero-section {
+  background: linear-gradient(
+      0deg,
+      rgba(69, 110, 214, 0.2) 0%,
+      rgba(69, 110, 214, 0.2) 100%
+    ),
+    url("../../../assets/HeroImg.png") lightgray 50% / cover no-repeat;
+  display: flex;
+  height: 712px;
+  padding: 64px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 20px;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+/* styling for paragraphs in hero section */
+.hero-section p {
+  /* margin-bottom: 20px; */
+  width: 632px;
+  font-style: var(--font-style-normal);
+  color: var(--White, #fff);
+}
+.hero-section p:nth-of-type(1) {
+  font-size: 32px;
+  font-weight: var(--font-weight-700);
+  line-height: 37.771px; /* 118.035% */
+  letter-spacing: 0.157px;
+  text-transform: capitalize;
+}
+.hero-section p:nth-of-type(2) {
+  font-size: 78px;
+  font-weight: var(--font-weight-700);
+  line-height: 93.622px; /* 120.028% */
+  letter-spacing: 0.315px;
+}
+.hero-section p:nth-of-type(3) {
+  font-size: 32px;
+  font-weight: var(--font-weight-400);
+  line-height: 47.214px; /* 147.544% */
+  letter-spacing: 0.315px;
+}
+/* styling for button in hero section */
+.hero-section button {
+  display: inline-flex;
+  padding: 16px 72px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 8px;
+  background: var(--White, #fff);
+  border: none;
+}
+.hero-section button a {
+  color: #3c4242;
+  text-align: center;
+  font-size: 24px;
+  font-weight: var(--font-weight-500);
+  line-height: normal;
+  text-decoration: none;
+}
+.hero-section button a:hover,
+.hero-section button a:active {
+  text-decoration: underline;
+}
