@@ -45,7 +45,7 @@ const CategoryProductsPage = () => {
           onChange={handleSearch}
           className="search-input"
         />
-        <FaSearch />
+        <FaSearch className="searchIcon" />
       </div>
       <h3>{categoryData.category}</h3>
 
