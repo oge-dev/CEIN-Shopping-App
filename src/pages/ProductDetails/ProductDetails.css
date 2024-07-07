@@ -1,13 +1,101 @@
-.Img-ProductDetails{
-    display: flex;
-    padding: 72px 32px;
-    align-items: center;
-flex-wrap: wrap;
+.img-product-details {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 72px 32px;
+  align-items: center;
+  background: var(--White);
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.ProductDetails{
-    margin-left: 10px;
+
+.img-product-details img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Rounded corners for images */
 }
-.RemoveBtn-AddBtn{
-    display: flex;
-    justify-content: space-between;
+
+.product-details {
+  margin-left: 20px;
+  flex: 1;
+  color: #333; /* Darker text color for readability */
+}
+
+.product-details h2 {
+  font-size: 24px;
+  color: var(--sky-blue);
+}
+
+.product-details del {
+  color: #888; /* Strikethrough price color */
+}
+
+.product-details p {
+  font-size: 18px;
+}
+
+.remove-btn-add-btn {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.remove-btn-add-btn button {
+  flex: 1 1 50%; /* Allow button to shrink and start with a 50% width */
+  max-width: 200px; /* Set a max-width to prevent excessive stretching */
+  padding: 10px 20px; /* Adjusted padding for button */
+  border: none;
+  border-radius: 5px;
+  background-color: var(--sky-blue); /* Primary color for buttons */
+  color: #fff; /* White text for buttons */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-btn-add-btn button:hover {
+  background-color: var(--sky-blue); /* Darker shade on hover */
+}
+
+.remove-btn-add-btn a {
+  flex: 1 1 50%; /* Allow link to shrink and start with a 50% width */
+  max-width: 200px; /* Set a max-width to prevent excessive stretching */
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #28a745; /* Green background for links */
+  color: #fff; /* White text for links */
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.remove-btn-add-btn a:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .img-product-details {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .product-details {
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .remove-btn-add-btn {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .remove-btn-add-btn button,
+  .remove-btn-add-btn a {
+    margin-bottom: 10px;
+    padding: 15px; /* Adjusted padding for smaller screens */
+    max-width: none; /* Reset max-width on smaller screens */
+    flex: 1 1 auto; /* Reset flex properties on smaller screens */
+  }
 }
