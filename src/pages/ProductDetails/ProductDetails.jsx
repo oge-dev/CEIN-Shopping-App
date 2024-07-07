@@ -3,10 +3,10 @@ import { useParams } from "react-router-dom";
 import { useCart } from "../../components/CartContext/CartContext";
 import ProductsData from "../../data/products";
 import { Link } from "react-router-dom";
-import "./ProductDetails.css";
+import "./ProductDetails.css"; // Import CSS file for styling
 
 const ProductDetails = () => {
-  const { productId } = useParams(); // Get the productId parameter from URL
+  const { productId } = useParams();
   const { cart, addToCart, removeFromCart } = useCart();
   const product = ProductsData.flatMap((category) => category.Products).find(
     (p) => p.id === parseInt(productId)
@@ -25,7 +25,7 @@ const ProductDetails = () => {
         <h2>{product.name}</h2>
         <del>&#36;{product.oldPrice}</del>
         <p>&#36;{product.price}</p>
-        <img src={product.rate} alt="Feedback" />
+        <img src={product.rate} className='Feedback' alt="Feedback" />
         <p>{product.description}</p>
         <div className="remove-btn-add-btn">
           {isInCart ? (
