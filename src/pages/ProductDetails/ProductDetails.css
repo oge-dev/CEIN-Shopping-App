@@ -1,5 +1,12 @@
-.ProductDetails{
+.Img-ProductDetails{
     display: flex;
     padding: 72px 32px;
     align-items: center;
+}
+.ProductDetails{
+    margin-left: 10px;
+}
+.RemoveBtn-AddBtn{
+    display: flex;
+    justify-content: space-between;
 }

@@ -19,25 +19,25 @@ const ProductDetails = () => {
   const isInCart = cart.some((item) => item.id === product.id);
 
   return (
-    <div className="ProductDetails">
+    <div className="Img-ProductDetails">
       <img src={product.image} alt={product.name} />
-      <div className="">
+      <div className="ProductDetails">
         <h2>{product.name}</h2>
-
+        <del>&#36;{product.oldPrice}</del>
+        <p>&#36;{product.price}</p>
+        <img src={product.rate} alt="Feedback" />
         <p>{product.description}</p>
-        <p>Price: ${product.price}</p>
-        {product.oldPrice && <p>Old Price: ${product.oldPrice}</p>}
-        {product.rate && <img src={product.rate} alt="Feedback" />}
-
-        {isInCart ? (
-          <button onClick={() => removeFromCart(product.id)}>
-            Remove from Cart
-          </button>
-        ) : (
-          <button onClick={() => addToCart(product)}>Add to Cart</button>
-        )}
-        <div>
-          <Link to={"/cart"}>Go to Cart</Link>
+        <div className="RemoveBtn-AddBtn">
+          {isInCart ? (
+            <button onClick={() => removeFromCart(product.id)}>
+              Remove from Cart
+            </button>
+          ) : (
+            <button onClick={() => addToCart(product)}>Add to Cart</button>
+          )}
+          <div>
+            <Link to={"/cart"}>Go to Cart</Link>
+          </div>
         </div>
       </div>
     </div>
