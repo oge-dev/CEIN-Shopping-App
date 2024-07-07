@@ -15,21 +15,22 @@
 .discount .boy {
   background: linear-gradient(135deg, #879dd6 0%, var(--sky-blue) 100%);
 }
+.discount .girl,
+.discount .boy {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  padding: 30px 49px;
+  max-width: 636px;
+  height: 300px;
+  align-items: center;
+}
 .discount .girl .discount-img img {
   max-width: 235px;
   height: 200px;
   flex-shrink: 0;
 }
-.discount .girl,
-.discount .boy{
-  display: flex;
-  flex-direction: row;
-  border-radius: 20px;
-  padding: 30px 49px;
-  /* width: 636px; */
-  height: 300px;
-  align-items: center;
-}
+
 .discount .boy .discount-img img {
   max-width: 250px;
   height: 251px;
@@ -43,7 +44,7 @@
 .discount .boy .discount-text h2 {
   color: var(--White, #fff);
   font-size: 45px;
-  
+  font-weight: var(--font-weight-700);
   line-height: normal;
   margin-bottom: 19px;
 }
@@ -56,8 +57,9 @@
   line-height: normal;
   margin-bottom: 32px;
 }
-.discount .boy .discount-text p span, .discount .girl .discount-text p span{
-  color:  #FBD103;
+.discount .boy .discount-text p span,
+.discount .girl .discount-text p span {
+  color: #fbd103;
 }
 .discount button {
   display: flex;
@@ -83,4 +85,44 @@
 .discount button a:hover,
 .discount button a:active {
   text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .discount .girl,
+  .discount .boy {
+    padding: 30px 49px;
+  }
+  .discount .girl .discount-img img {
+    display: none;
+  }
+  .discount .boy .discount-img img {
+    display: none;
+  }
+  .discount .girl .discount-text,
+  .discount .boy .discount-text {
+    width: 116.898px;
+  }
+  .discount .girl .discount-text h2,
+  .discount .boy .discount-text h2 {
+    font-size: 23.174px;
+  }
+  .discount .girl .discount-text p,
+  .discount .boy .discount-text p {
+    font-size: 12.874px;
+  }
+  .discount button {
+    width: 87.915px;
+    height: 26.778px;
+    padding: 15px 18px;
+  }
+  .discount button a {
+    font-size: 9.269px;
+  }
+}
+@media (max-width: 425px) {
+  .discount .girl .discount-img img {
+    display: none;
+  }
+  .discount .boy .discount-img img {
+    display: none;
+  }
 }

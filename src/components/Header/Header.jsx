@@ -17,7 +17,7 @@ const Header = () => {
           <nav>
             <Link to="/">Home</Link>
             <Link to="/products">Products</Link>
-            <Link to="/">Testimony</Link>
+            <Link to="/testimonial">Testimony</Link>
           </nav>
           <div>
             <Link to="/cart"><FiShoppingCart style={{ color: "var(--sky-blue)", fontSize: '20px' }} /></Link>

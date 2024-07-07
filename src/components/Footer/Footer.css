@@ -1,3 +1,25 @@
 footer{
-    text-align: center;
+    /* text-align: center; */
+    background: #456ED6;
+    color: #fff;
+    width: 100%;
+  padding: 72px 32px 0;
 }
+
+footer .logo img {
+    width: 186px;
+    height: 43.256px;
+    flex-shrink: 0;
+  }
+  .copyright{
+    padding: 19px 0;
+    
+text-align: center;
+  }
+  .copyright p{
+    color: var(--White, #FFF);
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }

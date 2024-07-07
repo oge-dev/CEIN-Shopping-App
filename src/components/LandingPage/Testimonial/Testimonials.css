@@ -1,88 +1,148 @@
 .testimonials {
-    text-align: center;
-    /* padding: 50px 0; */
-height: 612.5px;
-flex-shrink: 0;
-  }
-  
-  .testimonials h2 {
-    color: #484848;
+  text-align: center;
+  /* padding: 50px 0; */
+  width: 100%;
+  padding: 72px 32px;
+  flex-shrink: 0;
+}
 
-text-align: center;
-font-size: 33.542px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-  }
-  
-  .testimonials p {
-    color: #8A8A8A;
-text-align: center;
-font-family: Poppins;
-font-size: 11.667px;
-font-style: normal;
-font-weight: 400;
-line-height: 18.958px; /* 162.5% */
-  }
-  
-  .testimonial-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  
+.testimonials h2 {
+  color: var(--Dark-Grey---Fashion, #323232);
+  text-align: center;
+  font-size: 33.542px;
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-400);
+  line-height: normal;
+}
+
+.testimonials .sub-title {
+  color: var(--Dark-Grey---Fashion, #323232);
+  text-align: center;
+  font-size: 11.66px;
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-400);
+  line-height: 18.958px; 
+  margin-top: 20px;
+  margin-bottom: 65px;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 630px;
+  height: 291.667px;
+  text-align: left;
+  gap: 18px;
+  padding: 28px;
+  flex-shrink: 0;
+  border-radius: 7.292px;
+  background: var(--White, #fff);
+  box-shadow: 0px 14.583px 43.75px 0px rgba(46, 33, 61, 0.08);
+}
+
+.testimonial-image {
+  width: 176.458px;
+  height: 176.458px;
+  flex-shrink: 0;
+  box-shadow: -15px 15px 0px 0px rgba(46, 33, 61, 0.08);
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.testimonial-author {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+.hr{
+  margin-top: 20px;
+}
+.testimonial-author h4 {
+  color: #484848;
+  font-size: 23.333px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 6px;
+}
+.testimonial-author p {
+  color: #484848;
+  font-size: 11.667px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 4px;
+}
+
+.testimonial-rating {
+  color: #ffcc00;
+  /* font-size: 1rem; */
+  width: 69.271px;
+  height: 13.854px;
+  flex-shrink: 0;
+}
+
+.testimonial-controls {
+  margin-top: 1rem;
+}
+
+.testimonial-controls button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+  margin: 0 0.5rem;
+}
+@media (max-width:768px) {
   .testimonial {
-    width: 630px;
-height: 291.667px;
-flex-shrink: 0;
-    border-radius: 7.292px;
-    background: var(--White, #FFF);
-    box-shadow: 0px 14.583px 43.75px 0px rgba(46, 33, 61, 0.08);
-  }
-  
-  .testimonial-image {
-    width: 176.458px;
-height: 176.458px;
-flex-shrink: 0;
-width: 176.458px;
-height: 176.458px;
-flex-shrink: 0;
-  }
-  
-  .testimonial-text {
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 1rem;
-  }
-  
-  .testimonial-author {
-    font-weight: bold;
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 0.5rem;
-  }
-  
-  .testimonial-author span {
-    font-weight: normal;
-    color: #666;
-  }
-  
-  .testimonial-rating {
-    color: #ffcc00;
-    font-size: 1rem;
-  }
-  
-  .testimonial-controls {
-    margin-top: 1rem;
-  }
-  
-  .testimonial-controls button {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #333;
-    margin: 0 0.5rem;
-  }
-  
+    width: 382.95px;
+height: 177.292px;
+ }
+ .testimonial-image {
+  width: 107.261px;
+  height: 107.261px;
+}
+.testimonial-text {
+   font-size: 0.8rem;
+  margin-bottom: 0.5rem; 
+}
+.testimonial-author h4 {
+font-size: 14.183px;
+}
+.testimonial-author p {
+  font-size: 7.092px;
+}
+}
+@media (max-width:425px) {
+  .testimonial {
+    width: 168.3px;
+height: 77.917px;
+ }
+ .testimonial-image {
+  width: 47.14px;
+  height: 47.14px;
+}
+.testimonial-text {
+  font-size: 3.117px;
+  margin-bottom: 0.5rem; 
+}
+.testimonial-author h4 {
+  font-size: 6.233px;
+}
+.testimonial-author p {
+  font-size: 7.092px;
+}
+}

@@ -26,20 +26,25 @@ const testimonials = [
     role: "Developer",
     rating: 5,
   },
-];
+                         ];
 
 const Testimonial = ({ image, text, name, role, rating }) => {
   return (
     <div className="testimonial">
       <img src={image} alt={name} className="testimonial-image" />
+      <div>
       <p className="testimonial-text">"{text}"</p>
-      <div className="testimonial-author">
-        <strong>{name}</strong> <span>{role}</span>
-      </div>
       <div className="testimonial-rating">
         {"★".repeat(rating)}
         {"☆".repeat(5 - rating)}
       </div>
+      <hr className="hr"/>
+      <div className="testimonial-author">
+        <h4>{name}</h4> <p>{role}</p>
+      </div>
+      
+      </div>
+     
     </div>
   );
 };
@@ -58,7 +63,7 @@ const Testimonials = () => {
   return (
     <section className="testimonials">
       <h2>This Is What Our Customers Say</h2>
-      <p>
+      <p className="sub-title">
         Learn ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique
         dui.
       </p>
