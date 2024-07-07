@@ -50,7 +50,7 @@
 }
 .section-Feedback p{
   color: #323232;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -63,7 +63,7 @@
 }
 .product-card h4{
   color: var(--Dark-Grey---Fashion, #323232);
-  font-size: 24px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -77,7 +77,7 @@
 }
 .Pricing p{
   color: #456ed6;
-  font-size: 30px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -86,7 +86,7 @@
 .Pricing del {
   color: var(--Dark-Grey---Fashion, #323232);
   font-family: Ubuntu;
-  font-size: 24px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

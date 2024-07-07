@@ -4,7 +4,7 @@ import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import LandingPage from "./pages/LandingPage/LandingPage.jsx";
 import ProductList from "./components/Products/ProductList.jsx";
-import ProductDetails from "./components/Products/ProductDetails.jsx";
+import ProductDetails from "./pages/ProductDetails/ProductDetails.jsx";
 import CategoryProductsPage from "./pages/ShopPage/CategoryProductsPage.jsx";
 import { CartProvider } from "./components/CartContext/CartContext.jsx";
 import Testimonial from "./components/Testimonial/Testimonial.jsx";

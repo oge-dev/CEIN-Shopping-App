@@ -40,15 +40,14 @@ const CategoryProductsPage = () => {
         
         <input
           type="text"
-          placeholder="Search"
+          placeholder="Search..."
           value={searchTerm}
           onChange={handleSearch}
           className="search-input"
         />
         <FaSearch className="searchIcon" />
       </div>
-      <h3>{categoryData.category}</h3>
-
+         <h3>{categoryData.category}</h3>
       <div className="product-list">
         {filteredProducts.map((product) => (
           <Link

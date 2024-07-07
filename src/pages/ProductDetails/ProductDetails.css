@@ -1,0 +1,5 @@
+.ProductDetails{
+    display: flex;
+    padding: 72px 32px;
+    align-items: center;
+}
