@@ -5,7 +5,7 @@
 .DiscountSection .discount {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   gap: 29px;
   flex-wrap: wrap;
 }

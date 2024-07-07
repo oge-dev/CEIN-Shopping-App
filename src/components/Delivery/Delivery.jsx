@@ -1,8 +1,8 @@
 import React from 'react'
 import DeliveryComp from './DeliveryComp'
-import FreeShipping from "../../../assets/delivery1.png"
-import SUPPORT from "../../../assets/delivery2.png"
-import SECURED from "../../../assets/delivery3.png"
+import FreeShipping from "../../assets/delivery1.png"
+import SUPPORT from "../../assets/delivery2.png"
+import SECURED from "../../assets/delivery3.png"
 import "./Delivery.css"
 
 const Delivery = () => {

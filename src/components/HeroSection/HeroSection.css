@@ -5,7 +5,7 @@
       rgba(69, 110, 214, 0.2) 0%,
       rgba(69, 110, 214, 0.2) 100%
     ),
-    url("../../../assets/HeroImg.png") lightgray 50% / cover no-repeat;
+    url("../../assets/HeroImg.png") lightgray 50% / cover no-repeat;
   display: flex;
   height: 712px;
   width: 100%;

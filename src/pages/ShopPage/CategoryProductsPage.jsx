@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ProductsData from "../../data/products";
 import { Link } from "react-router-dom";
-import "../../components/ShopPage/Products/ProductList.css";
+import "../../components/Products/ProductList.css";
 import "./CategoryProductsPage.css";
+import { FaSearch } from "react-icons/fa";
 
 const CategoryProductsPage = () => {
   const { category } = useParams(); // Get the category parameter from URL
@@ -35,14 +36,19 @@ const CategoryProductsPage = () => {
 
   return (
     <div className="category">
+      <div className="search">
+        
+        <input
+          type="text"
+          placeholder="Search"
+          value={searchTerm}
+          onChange={handleSearch}
+          className="search-input"
+        />
+        <FaSearch />
+      </div>
       <h3>{categoryData.category}</h3>
-      <input
-        type="text"
-        placeholder="Search products..."
-        value={searchTerm}
-        onChange={handleSearch}
-        className="search-input"
-      />
+
       <div className="product-list">
         {filteredProducts.map((product) => (
           <Link

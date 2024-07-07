@@ -1,5 +1,5 @@
 import React from "react";
-import ImgComp from "../../imgComp.jsx";
+import ImgComp from "../imgComp.jsx";
 
 const DeliveryComp = ({ src, alt, headingText, paragraphText }) => {
   return (

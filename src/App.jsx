@@ -3,15 +3,15 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import LandingPage from "./pages/LandingPage/LandingPage.jsx";
+import ProductList from "./components/Products/ProductList.jsx";
+import ProductDetails from "./components/Products/ProductDetails.jsx";
+import CategoryProductsPage from "./pages/ShopPage/CategoryProductsPage.jsx";
+import { CartProvider } from "./components/CartContext/CartContext.jsx";
+import Testimonial from "./components/Testimonial/Testimonial.jsx";
+import CartPage from "./pages/CartPage/CartPage.jsx";
 import CheckoutPage from "./pages/CheckoutPage/CheckoutPage.jsx";
 import "./App.css";
 import NoPage from "./pages/WildCard/NoPage.jsx";
-import ProductDetails from "./components/ShopPage/Products/ProductDetails.jsx";
-import ProductList from "./components/ShopPage/Products/ProductList.jsx";
-import { CartProvider } from "./components/ShopPage/CartContext/CartContext.jsx";
-import CartPage from "./pages/CartPage/CartPage.jsx";
-import CategoryProductsPage from "./pages/CategoryProductsPage/CategoryProductsPage.jsx";
-import Testimonial from "./components/LandingPage/Testimonial/Testimonial.jsx";
 
 const App = () => {
   return (
@@ -45,15 +45,7 @@ const App = () => {
               </CartProvider>
             }
           />
-          <Route
-            path="/checkout"
-            element={
-              <CartProvider>
-                <CheckoutPage />
-              </CartProvider>
-            }
-          />
-
+          <Route path="/testimonial" element={<Testimonial />} />
           <Route
             path="/cart"
             element={
@@ -62,7 +54,14 @@ const App = () => {
               </CartProvider>
             }
           />
-           <Route path="/testimonial" element={<Testimonial />} />
+          <Route
+            path="/checkout"
+            element={
+              <CartProvider>
+                <CheckoutPage />
+              </CartProvider>
+            }
+          />
           <Route path="*" element={<NoPage />} />
         </Routes>
       </main>

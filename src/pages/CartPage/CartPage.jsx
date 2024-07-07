@@ -1,7 +1,7 @@
 // CartPage.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useCart } from '../../components/ShopPage/CartContext/CartContext';
+import { useCart } from '../../components/CartContext/CartContext';
 
 const CartPage = () => {
   const { cart, removeFromCart } = useCart();

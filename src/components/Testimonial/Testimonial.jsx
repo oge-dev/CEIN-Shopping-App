@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Testimonials.css"; 
 import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
-import Megan from "../../../assets/Megen.png"
-import James from "../../../assets/James.png"
+import Megan from "../../assets/Megen.png"
+import James from "../../assets/James.png"
 
 const testimonials = [
   {

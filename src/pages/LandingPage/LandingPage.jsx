@@ -1,10 +1,10 @@
 import React from "react";
 import "./LandingPage.css";
-import HeroSection from "../../components/LandingPage/HeroSection/HeroSection";
-import Delivery from "../../components/LandingPage/Delivery/Delivery";
-import DiscountSection from "../../components/LandingPage/DiscountSection/DiscountSection";
-import Testimonials from "../../components/LandingPage/Testimonial/Testimonial";
-import ProductList from "../../components/ShopPage/Products/ProductList";
+import HeroSection from "../../components/HeroSection/HeroSection";
+import Delivery from "../../components/Delivery/Delivery";
+import DiscountSection from "../../components/DiscountSection/DiscountSection";
+import Testimonials from "../../components/Testimonial/Testimonial";
+import ProductList from "../../components/Products/ProductList";
 
 const LandingPage = () => {
   return (
