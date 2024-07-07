@@ -12,9 +12,9 @@ const CheckoutPage = () => {
 
   const handleCheckout = () => {
     // Implement your checkout logic here, such as sending order details to a server
-    console.log("Processing checkout...");
+    alert("Processing checkout...");
     // Optionally, clear cart after successful checkout
-    // clearCart();
+    clearCart();
   };
 
   return (
