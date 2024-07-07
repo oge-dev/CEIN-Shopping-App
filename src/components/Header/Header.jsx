@@ -3,24 +3,24 @@ import "./Header.css";
 import { Outlet, Link } from "react-router-dom";
 import ImgComp from "../imgComp";
 import Logo from "../../assets/Logo.png";
+import { FiShoppingCart } from "react-icons/fi";
 
 const Header = () => {
   return (
     <>
       <header>
-        <div>
+        <div className="logo">
           <Link to="/">
             <ImgComp src={Logo} alt={"cein logo"} />
           </Link>
         </div>
-          <div>
+          <nav>
             <Link to="/">Home</Link>
             <Link to="/products">Products</Link>
-            <Link to="/">AboutUs</Link>
-          </div>
+            <Link to="/">Testimony</Link>
+          </nav>
           <div>
-            <Link to="/testimonial">Testimony</Link>
-            <Link to="/cart">Carts</Link>
+            <Link to="/cart"><FiShoppingCart style={{ color: "var(--sky-blue)", fontSize: '20px' }} /></Link>
           </div>
       </header>
       <Outlet />
