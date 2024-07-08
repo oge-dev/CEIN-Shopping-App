@@ -1,50 +1,51 @@
 import React, { useState } from "react";
-import "./Testimonials.css"; 
+import "./Testimonials.css";
 import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
-import Megan from "../../assets/Megen.png"
-import James from "../../assets/James.png"
+import Megan from "../../assets/Megen.png";
+import James from "../../assets/James.png";
 
 const testimonials = [
   {
-    image: James, 
-    text: "You won't regret it. I would like to personally thank you for your outstanding product. Absolutely wonderful!",
+    image: James,
+    text:
+      "You won't regret it. I would like to personally thank you for your outstanding product. Absolutely wonderful!",
     name: "James K.",
     role: "Traveler",
     rating: 5,
   },
   {
-    image: James, 
-    text: "Your product is amazing. I have no words to describe how grateful I am. Absolutely love it!",
+    image: James,
+    text:
+      "Your product is amazing. I have no words to describe how grateful I am. Absolutely love it!",
     name: "Megen  W.",
     role: "Designer",
     rating: 4,
   },
   {
-    image: Megan, 
-    text: "Excellent product! It has exceeded my expectations in every way. Highly recommended!",
+    image: Megan,
+    text:
+      "Excellent product! It has exceeded my expectations in every way. Highly recommended!",
     name: "Susan D.",
     role: "Developer",
     rating: 5,
   },
-                         ];
+];
 
 const Testimonial = ({ image, text, name, role, rating }) => {
   return (
     <div className="testimonial">
       <img src={image} alt={name} className="testimonial-image" />
       <div>
-      <p className="testimonial-text">"{text}"</p>
-      <div className="testimonial-rating">
-        {"★".repeat(rating)}
-        {"☆".repeat(5 - rating)}
+        <p className="testimonial-text">"{text}"</p>
+        <div className="testimonial-rating">
+          {"★".repeat(rating)}
+          {"☆".repeat(5 - rating)}
+        </div>
+        <hr className="hr" />
+        <div className="testimonial-author">
+          <h4>{name}</h4> <p>{role}</p>
+        </div>
       </div>
-      <hr className="hr"/>
-      <div className="testimonial-author">
-        <h4>{name}</h4> <p>{role}</p>
-      </div>
-      
-      </div>
-     
     </div>
   );
 };
@@ -83,3 +84,4 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+
