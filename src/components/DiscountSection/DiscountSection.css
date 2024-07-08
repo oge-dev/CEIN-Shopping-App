@@ -21,8 +21,8 @@
   flex-direction: row;
   border-radius: 20px;
   padding: 30px 49px;
-  max-width: 636px;
-  height: 300px;
+  /* max-width: 636px; */
+  /* height: 300px; */
   align-items: center;
 }
 .discount .girl .discount-img img {
@@ -87,9 +87,7 @@
   text-decoration: underline;
 }
 @media (max-width: 768px) {
-  .DiscountSection .discount {
-    justify-content: space-evenly;
-  }
+  
   .discount .girl,
   .discount .boy {
     padding: 30px 49px;

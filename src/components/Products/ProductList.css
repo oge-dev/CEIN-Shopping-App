@@ -1,132 +1,124 @@
-
 .category {
   width: 100%;
-  padding: 72px 32px;
+  padding: 2rem 1.5rem; /* Adjust padding for responsiveness */
 }
-.category  h2{
-  color: var(--Dark-Grey---Fashion, #323232);
+
+.category h2 {
+  color: #323232;
   text-align: center;
-  font-size: 50px;
-  font-style: var(--font-style-normal);
-  font-weight: var(--font-weight-700);
+  font-size: 2.5rem;
+  font-weight: 700;
   line-height: normal;
 }
-.category  .sub-title{
-  color: var(--Dark-Grey---Fashion, #323232);
+
+.category .sub-title {
+  color: #323232;
   text-align: center;
-  font-size: 20px;
-  font-style: var(--font-style-normal);
-  font-weight: var(--font-weight-400);
-  line-height: normal;
-  margin-top: 20px;
-  margin-bottom: 65px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 1.25rem;
+  margin-bottom: 4rem;
   opacity: 0.5;
 }
+
 .product-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  row-gap:32px;
-  /* padding: 3px 30px 3px 0px; */
+  gap: 1.5rem; /* Adjust gap between product cards */
 }
 
 .product-card {
+  flex-grow: 1; /* Ensures cards fill available space evenly */
   max-width: 280px;
   width: calc(25% - 20px); /* 4 cards per row by default */
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   text-decoration: none;
 }
-.product-card .SampleImg{
+
+.product-card .SampleImg {
   width: 100%;
   height: 270px;
-  margin-bottom: 21px;
+  margin-bottom: 1.3125rem;
 }
-.section-Feedback{
+
+.section-Feedback {
   display: flex;
   justify-content: space-between;
-  height: 23px;
-  flex-shrink: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
-.section-Feedback p{
+
+.section-Feedback p {
   color: #323232;
-  font-size: 18px;
-  font-style: normal;
+  font-size: 1.125rem;
   font-weight: 400;
-  line-height: normal;
   opacity: 0.5;
 }
-.section-Feedback img{
+
+.section-Feedback img {
   width: 95.79px;
   height: 15px;
-  flex-shrink: 0;
 }
-.product-card h4{
-  color: var(--Dark-Grey---Fashion, #323232);
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  margin-bottom: 10px;
 
+.product-card h4 {
+  color: #323232;
+  font-size: 1.375rem;
+  font-weight: 500;
+  margin-bottom: 0.625rem;
 }
+
 .Pricing {
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
-.Pricing p{
+
+.Pricing p {
   color: #456ed6;
-  font-size: 20px;
-  font-style: normal;
+  font-size: 1.25rem;
   font-weight: 700;
-  line-height: normal;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
+
 .Pricing del {
-  color: var(--Dark-Grey---Fashion, #323232);
-  font-family: Ubuntu;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  color: #323232;
+  font-size: 1.125rem;
   opacity: 0.3;
-  padding: 3px 3px 3px 0;
+  padding-right: 0.3125rem;
 }
+
 .btn-container {
   display: flex;
   justify-content: center;
 }
+
 .btn {
   max-width: 300px;
-  padding: 15.556px 23.333px;
-  border-radius: 38.889px;
-  border: 0.972px solid #d9d9d9;
+  padding: 1rem 1.5rem;
+  border-radius: 40px;
+  border: 1px solid #d9d9d9;
   background: var(--blue);
-  box-shadow: 0px 3.889px 27.222px 0px rgba(70, 70, 70, 0.4);
-}
-.btn a {
+  box-shadow: 0px 4px 28px 0px rgba(70, 70, 70, 0.4);
+  text-decoration: none; /* Ensure link styling */
   display: flex;
   justify-content: center;
-  flex-direction: row;
   align-items: center;
-  gap: 7.778px;
-  text-decoration: none;
 }
-.btn a:hover {
+
+.btn:hover {
   text-decoration: underline;
 }
+
 .btn span {
-  color: var(--White, #fff);
-  font-size: 15.556px;
-  font-style: normal;
+  color: #fff;
+  font-size: 0.972rem;
   font-weight: 600;
-  line-height: normal;
 }
+
 .btn .ArrowDown {
-  width: 23.333px;
-  height: 23.333px;
+  width: 1.25rem;
+  height: 1.25rem;
 }
+
 @media screen and (max-width: 1024px) {
   .product-card {
     width: calc(50% - 20px); /* 2 cards per row on tablets */
@@ -136,5 +128,9 @@
 @media screen and (max-width: 600px) {
   .product-card {
     width: calc(100% - 20px); /* 1 card per row on mobile */
+  }
+
+  .category {
+    padding: 1.5rem; /* Adjust padding for smaller screens */
   }
 }

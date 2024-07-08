@@ -36,14 +36,11 @@ const ProductList = () => {
             ))}
           </div>
           <div className="btn-container">
-          <button className="btn">
-            <Link to={`/category/${category.category}`}>
+            <Link to={`/category/${category.category}`} className="btn">
               <span>See More</span>
               <img src={ArrowDown} alt="Arrow-Down" className="ArrowDown" />
             </Link>
-          </button>
           </div>
-          
         </div>
       ))}
     </div>
