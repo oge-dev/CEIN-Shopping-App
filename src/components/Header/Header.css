@@ -89,7 +89,7 @@ nav a {
 }
 
 .dropdown-menu a:hover {
-  background-color: var(--White-smoke-100);
+  background-color: var(--White-smoke-200);
 }
 
 /* Responsive design */
@@ -116,6 +116,7 @@ nav a {
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 35%; /* Set width to 35% of the viewport */
+    z-index: 1;
   }
 
   .nav a,

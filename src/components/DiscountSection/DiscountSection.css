@@ -87,6 +87,9 @@
   text-decoration: underline;
 }
 @media (max-width: 768px) {
+  .DiscountSection .discount {
+    justify-content: space-evenly;
+  }
   .discount .girl,
   .discount .boy {
     padding: 30px 49px;
@@ -119,6 +122,9 @@
   }
 }
 @media (max-width: 425px) {
+  .DiscountSection .discount {
+    justify-content: center;
+  }
   .discount .girl .discount-img img {
     display: none;
   }
