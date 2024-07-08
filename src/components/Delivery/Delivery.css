@@ -36,9 +36,6 @@
   }
   @media screen and (max-width: 768px) {
 
-    /* .delivery {
-      justify-content: space-evenly;
-    } */
     .delivery img {
       width: 40px;
       height: 40px;
@@ -49,4 +46,10 @@
     .delivery p {
       font-size: 14px;
     }
+  }
+  @media screen and (max-width: 425px) {
+    .delivery {
+      justify-content:center;
+    }
+   
   }

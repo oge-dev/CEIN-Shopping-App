@@ -126,6 +126,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .product-list {
+    justify-content: center;
+  }
   .product-card {
     width: calc(100% - 20px); /* 1 card per row on mobile */
   }

@@ -57,3 +57,13 @@
   padding: 20px 0;
   margin: 20px auto 65px;
 }
+@media screen and (max-width: 786px) {
+  .searchIcon {
+    right: 20%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .searchIcon {
+    right: 10%;
+  }
+}
