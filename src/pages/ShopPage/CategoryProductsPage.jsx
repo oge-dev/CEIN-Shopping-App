@@ -1,19 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import ProductsData from "../../data/products";
-import { Link } from "react-router-dom";
-import "../../components/Products/ProductList.css";
-import "./CategoryProductsPage.css";
 import { FaSearch } from "react-icons/fa";
+import "./CategoryProductsPage.css";
 
 const CategoryProductsPage = () => {
   const { category } = useParams(); // Get the category parameter from URL
-  const categoryData = ProductsData.find((cat) => cat.category === category);
+  const categoryData = ProductsData.find((cat) => cat.category.toLowerCase() === category.toLowerCase());
 
   const [searchTerm, setSearchTerm] = useState("");
-  const [filteredProducts, setFilteredProducts] = useState(
-    categoryData?.Products || []
-  );
+  const [filteredProducts, setFilteredProducts] = useState(categoryData?.Products || []);
 
   useEffect(() => {
     if (categoryData) {
@@ -27,7 +23,7 @@ const CategoryProductsPage = () => {
   }, [searchTerm, categoryData]);
 
   if (!categoryData) {
-    return <div>Category not found</div>;
+    return <div className="category">Category not found</div>;
   }
 
   const handleSearch = (event) => {
@@ -37,7 +33,6 @@ const CategoryProductsPage = () => {
   return (
     <div className="category">
       <div className="search">
-        
         <input
           type="text"
           placeholder="Search..."
@@ -47,14 +42,10 @@ const CategoryProductsPage = () => {
         />
         <FaSearch className="searchIcon" />
       </div>
-         <h3>{categoryData.category}</h3>
+      <h3>{categoryData.category}</h3>
       <div className="product-list">
         {filteredProducts.map((product) => (
-          <Link
-            key={product.id}
-            to={`/products/${product.id}`}
-            className="product-card"
-          >
+          <Link key={product.id} to={`/products/${product.id}`} className="product-card">
             <img src={product.image} alt={product.name} className="SampleImg" />
             <div className="section-Feedback">
               <p>{product.section}</p>

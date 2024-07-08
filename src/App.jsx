@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import LandingPage from "./pages/LandingPage/LandingPage.jsx";
+import ProductList from "./components/Products/ProductList.jsx";
 import ProductDetails from "./pages/ProductDetails/ProductDetails.jsx";
 import CategoryProductsPage from "./pages/ShopPage/CategoryProductsPage.jsx";
 import { CartProvider } from "./components/CartContext/CartContext.jsx";
@@ -19,6 +20,15 @@ const App = () => {
       <main>
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route
+            path="/products"
+            exact
+            element={
+              <CartProvider>
+                <ProductList />
+              </CartProvider>
+            }
+          />
           <Route
             path="/products/:productId"
             element={
