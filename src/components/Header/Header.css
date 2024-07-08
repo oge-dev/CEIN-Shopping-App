@@ -45,6 +45,53 @@ nav a {
   font-size: 24px;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--sky-blue);
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center align Products text */
+}
+
+.dropdown-arrow {
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 50%; /* Center dropdown menu horizontally */
+  transform: translateX(-50%);
+  background: var(--White);
+  border: 1px solid var(--White-smoke-200);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  width: max-content;
+}
+
+.dropdown-menu a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--sky-blue);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dropdown-menu a:hover {
+  background-color: var(--White-smoke-100);
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .header {
@@ -64,15 +111,22 @@ nav a {
     display: flex;
     position: absolute;
     top: 70px;
-    left: 0;
+    right: 0; /* Align menu to the right */
     background: var(--White);
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 35%; /* Set width to 35% of the viewport */
   }
 
-  .nav a {
+  .nav a,
+  .dropdown-toggle {
     padding: 10px 0;
     width: 100%;
+    justify-content: center; /* Center align text */
+  }
+
+  .dropdown {
+    text-align: center;
   }
 
   .menu-toggle {
