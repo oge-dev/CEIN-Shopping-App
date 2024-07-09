@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ProductsData from "../../../data/Products";
+import ProductsData from "../../../data/products";
 import "./ProductList.css";
 import ArrowDown from "../../../assets/Keyboard-arrow-down.png";
 

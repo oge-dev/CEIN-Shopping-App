@@ -1,7 +1,7 @@
 // CategoryProductsPage.js
 import React from "react";
 import { useParams } from "react-router-dom";
-import ProductsData from "../../data/Products";
+import ProductsData from "../../data/products";
 import { Link } from "react-router-dom";
 
 const CategoryProductsPage = () => {
