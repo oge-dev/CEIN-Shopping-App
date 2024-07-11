@@ -1,25 +1,93 @@
-footer{
-    /* text-align: center; */
-    background: #456ED6;
-    color: #fff;
-    width: 100%;
-  padding: 72px 32px 0;
-}
+footer {
+  /* text-align: center; */
+  background: #456ed6;
 
+  color: var(--White, #fff);
+  width: 100%;
+  padding: 30px 85.87px 0;
+}
+.footer-items {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+}
 footer .logo img {
-    width: 186px;
-    height: 43.256px;
-    flex-shrink: 0;
+  width: 186px;
+  height: 43.256px;
+  flex-shrink: 0;
+}
+.contact p {
+  margin-top: 20px;
+  font-size: 16px;
+  font-style: var(--font-style-normal);
+  line-height: normal;
+}
+.contact p strong {
+  font-weight: var(--font-weight-600);
+}
+.contact p span {
+  font-weight: var(--font-weight-400);
+}
+.Shopping-Categories,
+.Useful-Links,
+.Help-Information {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 28px;
+}
+.Shopping-Categories h4,
+.Useful-Links h4,
+.Help-Information h4 {
+  font-size: 16px;
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-700);
+  line-height: normal;
+}
+.Shopping-Categories a,
+.Useful-Links a,
+.Help-Information a {
+  color: var(--White, #fff);
+  font-size: 14px;
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-400);
+  line-height: normal;
+  text-decoration: none;
+}
+.copyright {
+  padding: 53.13px 0 19px;
+  text-align: center;
+}
+.copyright p {
+  color: var(--White, #fff);
+  font-size: 10px;
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-400);
+  line-height: normal;
+}
+@media screen and (max-width: 786px) {
+  footer {
+    padding: 30px 85.87px 0;
   }
-  .copyright{
-    padding: 19px 0;
-    
-text-align: center;
+  .footer-items {
+    grid-template-columns: repeat(2, 400px);
   }
-  .copyright p{
-    color: var(--White, #FFF);
-font-size: 10px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  .Shopping-Categories,
+  .Useful-Links,
+  .Help-Information {
+    margin-top: 48px;
   }
+}
+@media screen and (max-width: 425px) {
+  footer {
+    padding: 30px 28px 0;
+  }
+  .footer-items {
+    grid-template-columns: repeat(1, 100%);
+  }
+  .Shopping-Categories,
+  .Useful-Links,
+  .Help-Information {
+    margin-top: 58px;
+    text-align: center;
+  }
+}

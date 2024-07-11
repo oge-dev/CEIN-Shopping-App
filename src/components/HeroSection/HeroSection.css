@@ -107,8 +107,8 @@
 
 @media (max-width: 452px) {
   .hero-section {
-    height: auto;
-    /* height: 183px; */
+    /* height: auto;  */
+    height: 183px;
     padding: 26px 32px;
   }
   .hero-section p {
