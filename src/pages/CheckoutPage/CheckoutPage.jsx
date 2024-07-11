@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCart } from '../../components/CartContext/CartContext';
 import './CheckoutPage.css'; // Import your CSS file for styling
@@ -6,6 +6,8 @@ import './CheckoutPage.css'; // Import your CSS file for styling
 const CheckoutPage = () => {
   const { cart } = useCart();
   const navigate = useNavigate(); // Hook for navigation
+
+  const [cardNumber, setCardNumber] = useState('');
 
   const getTotalPrice = () => {
     return cart.reduce((total, product) => total + product.price, 0).toFixed(2);
@@ -15,10 +17,12 @@ const CheckoutPage = () => {
     event.preventDefault(); // Prevent form submission
     // Implement your checkout logic here, such as sending order details to a server
     alert("Processing checkout...");
-    alert("checkout sucessful...");
     // Optionally, clear cart after successful checkout
     // clearCart();
-    navigate('/'); // Navigate to home after checkout
+    setTimeout(() => {
+      alert("Checkout Successful! Redirecting to Home.");
+      navigate('/'); // Navigate to home after checkout
+    }, 2000); // Simulating a delay for fun
   };
 
   return (
@@ -40,6 +44,14 @@ const CheckoutPage = () => {
           <input type="text" placeholder="Name" className="input-field" required />
           <input type="email" placeholder="Email" className="input-field" required />
           <input type="text" placeholder="Address" className="input-field" required />
+          <input
+            type="text"
+            placeholder="ATM Card Number"
+            className="input-field"
+            value={cardNumber}
+            onChange={(e) => setCardNumber(e.target.value)}
+            required
+          />
           <button type="submit" className="checkout-button">Proceed to Checkout</button>
         </form>
       </div>
