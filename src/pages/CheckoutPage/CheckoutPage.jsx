@@ -1,22 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useCart } from '../../components/CartContext/CartContext';
 import './CheckoutPage.css'; // Import your CSS file for styling
 
 const CheckoutPage = () => {
   const { cart } = useCart();
+  const navigate = useNavigate(); // Hook for navigation
 
   const getTotalPrice = () => {
     return cart.reduce((total, product) => total + product.price, 0).toFixed(2);
   };
 
   const handleCheckout = (event) => {
-    event.preventDefault();
+    event.preventDefault(); // Prevent form submission
     // Implement your checkout logic here, such as sending order details to a server
     alert("Processing checkout...");
+    alert("checkout sucessful...");
     // Optionally, clear cart after successful checkout
     // clearCart();
-    window.location.reload(); // Refresh the page
+    navigate('/'); // Navigate to home after checkout
   };
 
   return (
@@ -34,11 +36,11 @@ const CheckoutPage = () => {
       </div>
       <div className="shipping-info">
         <h3>Shipping Information:</h3>
-        <form className="shipping-form">
-          <input type="text" placeholder="Name" className="input-field" />
-          <input type="email" placeholder="Email" className="input-field" />
-          <input type="text" placeholder="Address" className="input-field" />
-          <button type="submit" className="checkout-button" onClick={handleCheckout}>Proceed to Checkout</button>
+        <form className="shipping-form" onSubmit={handleCheckout}>
+          <input type="text" placeholder="Name" className="input-field" required />
+          <input type="email" placeholder="Email" className="input-field" required />
+          <input type="text" placeholder="Address" className="input-field" required />
+          <button type="submit" className="checkout-button">Proceed to Checkout</button>
         </form>
       </div>
       <Link to="/" className="back-link">Back to Home</Link>
