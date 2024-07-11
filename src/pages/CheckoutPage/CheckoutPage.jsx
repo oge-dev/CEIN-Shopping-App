@@ -10,11 +10,13 @@ const CheckoutPage = () => {
     return cart.reduce((total, product) => total + product.price, 0).toFixed(2);
   };
 
-  const handleCheckout = () => {
+  const handleCheckout = (event) => {
+    event.preventDefault();
     // Implement your checkout logic here, such as sending order details to a server
     alert("Processing checkout...");
     // Optionally, clear cart after successful checkout
     // clearCart();
+    window.location.reload(); // Refresh the page
   };
 
   return (
