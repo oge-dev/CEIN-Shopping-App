@@ -8,8 +8,9 @@
     --blue: #1f3e97;
     --Dark-Grey---Fashion: #323232;
     /* fonts */
-    --font-family-Ubuntu: "Ubuntu", sans-serif;
-    
+    --font-family-Inter: "Inter", sans-serif;
+    --font-family-Ubuntu: var(--font-family-Inter);
+   
     --font-weight-400: 400;
     --font-weight-500: 500;
     --font-weight-600: 600;

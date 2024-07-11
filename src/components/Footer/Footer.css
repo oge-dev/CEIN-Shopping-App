@@ -64,7 +64,7 @@ footer .logo img {
   font-weight: var(--font-weight-400);
   line-height: normal;
 }
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 977px) {
   footer {
     padding: 30px 85.87px 0;
   }
