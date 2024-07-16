@@ -1,4 +1,3 @@
-// CartContext.js
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const CartContext = createContext();
@@ -25,8 +24,16 @@ export const CartProvider = ({ children }) => {
     setCart(prevCart => prevCart.filter(item => item.id !== productId));
   };
 
+  const updateQuantity = (id, quantity) => {
+    setCart((prevCart) =>
+      prevCart.map((item) =>
+        item.id === id ? { ...item, quantity: Math.max(1, quantity) } : item
+      )
+    );
+  };
+
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
+    <CartContext.Provider value={{ cart, addToCart, removeFromCart, updateQuantity }}>
       {children}
     </CartContext.Provider>
   );

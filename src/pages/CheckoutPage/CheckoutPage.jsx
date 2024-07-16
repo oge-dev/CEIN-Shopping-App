@@ -97,7 +97,7 @@ const CheckoutPage = () => {
             />
           </div>
           <div className="form-group select-group">
-            <div className="form-input">
+            <div className="checkout-form-input">
               <label>
                 State / Province:<span>*</span>
               </label>
@@ -115,7 +115,7 @@ const CheckoutPage = () => {
                 ))}
               </select>
             </div>
-            <div className="form-input">
+            <div className="checkout-form-input">
               <label>
                 City:<span>*</span>
               </label>
@@ -158,7 +158,7 @@ const CheckoutPage = () => {
             />
           </div>
           <div className="form-group select-group">
-            <div className="form-input">
+            <div className="checkout-form-input">
               <label>
                 Expiration Date:<span>*</span>
               </label>
@@ -166,7 +166,7 @@ const CheckoutPage = () => {
                 placeholder="MM / YY"
                 required />
             </div>
-            <div className="form-input">
+            <div className="checkout-form-input">
               <label>
                 CVC:<span>*</span>
               </label>

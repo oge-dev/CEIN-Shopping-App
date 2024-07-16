@@ -19,7 +19,7 @@ const App = () => {
       <Header />
       <main>
         <Routes>
-          <Route path="/" element={<LandingPage />} />
+          <Route path="/" element={ <CartProvider><LandingPage /></CartProvider>} />
           <Route
             path="/products"
             exact
