@@ -1,12 +1,12 @@
 /* CartPage.css */
 
 .cart-container {
-    max-width: 800px;
     margin: 20px auto;
     padding: 20px;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 5px;
+    max-width: 842px;
   }
   
   .cart-items {
