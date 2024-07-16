@@ -42,6 +42,21 @@
   margin-bottom: 1.3125rem;
 }
 
+.product-actions {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.action-icon {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
 .section-Feedback {
   display: flex;
   justify-content: space-between;
@@ -84,6 +99,28 @@
   font-size: 1.125rem;
   opacity: 0.3;
   padding-right: 0.3125rem;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 0.625rem;
+}
+
+.quantity-controls button {
+  background-color: #456ed6;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.quantity-controls span {
+  font-size: 1.25rem;
+  margin: 0 10px;
 }
 
 .btn-container {
