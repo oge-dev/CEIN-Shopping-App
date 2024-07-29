@@ -27,7 +27,7 @@ const ProductList = () => {
           <p className="sub-title">{category.title}</p>
           <div className="product-list">
             {category.Products.slice(0, 4).map((product) => (
-               <Link key={product.id} to={`/products/${product.id}`} className="product-card">
+               <div key={product.id} className="product-card">
                 <img
                   className="SampleImg"
                   src={product.image}
@@ -52,7 +52,7 @@ const ProductList = () => {
                   <span>{product.quantity}</span>
                   <button onClick={() => handleQuantityChange(product.id, product.quantity + 1)}>+</button>
                 </div>
-              </Link>
+              </div>
             ))}
           </div>
           <div className="btn-container">
